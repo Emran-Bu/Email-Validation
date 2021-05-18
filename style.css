@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    background-color: #aaa;
+}
+
+#registration{
+    width: 70%;
+    margin: 15% auto;
+    padding: 50px;
+    background-color: #020202;
+    border-radius: 40px;
+}
+
+#registration h2{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 45px;
+    color: #0069D9;
+    font-weight: 700;
+    text-shadow: 4px 5px 5px #4cbb54;
+    transform: scale3d(1,1.1,3);
+}
+
+#email, #password, #confirmPassword{
+    background:#DEE1E6;
+    border:none;
+    color:#000 ;
+}
+
+.inputBox{
+    position: relative;
+}
+
+#emailVal.valid .inputBox:after{
+    content: '';
+    position: absolute;
+    background: url('img/valid.png');
+    background-size: cover;
+    height: 24px;
+    width: 24px;
+    right: -12px;
+    bottom: 7px;
+    z-index: 1000;
+}
+
+#emailVal.invalid .inputBox:after{
+    content: '';
+    position: absolute;
+    background: url('img/Invalid.png');
+    background-size: cover;
+    height: 24px;
+    width: 24px;
+    right: -12px;
+    bottom: 7px;
+    z-index: 1000;
+}
+
+#passwordVal.valid .inputBox:after{
+    content: '';
+    position: absolute;
+    background: url('img/valid.png');
+    background-size: cover;
+    height: 24px;
+    width: 24px;
+    right: -12px;
+    bottom: 7px;
+    z-index: 1000;
+}
+
+#passwordVal.invalid .inputBox:after{
+    content: '';
+    position: absolute;
+    background: url('img/Invalid.png');
+    background-size: cover;
+    height: 24px;
+    width: 24px;
+    right: -12px;
+    bottom: 7px;
+    z-index: 1000;
+}
+
+#confirmPasswordVal.valid .inputBox:after{
+    content: '';
+    position: absolute;
+    background: url('img/valid.png');
+    background-size: cover;
+    height: 24px;
+    width: 24px;
+    right: -12px;
+    bottom: 7px;
+    z-index: 1000;
+}
+
+#confirmPasswordVal.invalid .inputBox:after{
+    content: '';
+    position: absolute;
+    background: url('img/Invalid.png');
+    background-size: cover;
+    height: 24px;
+    width: 24px;
+    right: -12px;
+    bottom: 7px;
+    z-index: 1000;
+}
+
+#btnSubmit{
+    position: relative;
+    overflow: hidden;
+    transition: 1s all;
+}
+
+#btnSubmit:before{
+    content: '';
+    position: absolute;
+    background: url('img/concrete.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: 1s all ease;
+}
+
+#btnSubmit:after{
+    content: '';
+    position: absolute;
+    background: url('img/concrete.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0px;
+    z-index: 1000;
+    transition: 1s all ease;
+}
+
+#btnSubmit.ac:after{
+    width:0;
+  
+}
+#btnSubmit.ac:before{
+    width:0;
+  }
