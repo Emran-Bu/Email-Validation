@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="registration">
+            <h2>Registration Form</h2>
+            <form id="form" action="">
+                <div id="emailVal">
+                    <div class="form-group inputBox">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="" id="email" class="form-control mt-1" onkeyup="emailValidation()">
+                    </div>
+                </div>
+
+                <div id="passwordVal" class="mt-2">
+                    <div class="form-group inputBox">
+                        <label for="password">Password</label>
+                        <input type="password" name="" id="password" class="form-control mt-1" onkeyup="passwordValidation()">
+                    </div>
+                </div>
+
+                <div id="confirmPasswordVal" class="mt-2">
+                    <div class="form-group inputBox">
+                        <label for="password">Confirm Password</label>
+                        <input type="password" name="" id="confirmPassword" class="form-control mt-1" onkeyup="confirmPasswordValidation()">
+                    </div>
+                </div>
+
+                <input type="hidden" name="" id="emailCount">
+                <input type="hidden" name="" id="passwordCount">
+                <input type="hidden" name="" id="confirmPasswordCount">
+
+                <div id="btnSubmit" class="mt-3">
+                    <button id="submit" class="btn btn-primary w-100">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
